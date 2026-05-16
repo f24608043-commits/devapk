@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { ArrowRight, CheckCircle2, ShieldCheck, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
@@ -17,24 +18,23 @@ export const HeroSection = () => {
           </FadeIn>
           
           <FadeIn direction="right" delay={0.4}>
-            <h1 className="text-5xl md:text-7xl font-manrope text-navy leading-[1.1]">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-manrope text-navy leading-[1.1]">
               Healthy Smiles <br/>
               <span className="text-brandRed">Begin Here.</span>
             </h1>
           </FadeIn>
 
           <FadeIn direction="right" delay={0.6}>
-            <p className="text-lg text-muted max-w-lg leading-relaxed">
+            <p className="text-base md:text-lg text-muted max-w-lg leading-relaxed">
               Experience advanced dentistry curated by Brig. Dr. Nazir. From premium maxillofacial surgery to aesthetic refinements, we blend clinical precision with hospitality-driven luxury.
             </p>
           </FadeIn>
-
-          <FadeIn direction="right" delay={0.8} className="flex flex-wrap gap-4 pt-4">
-            <Button size="lg" className="flex items-center gap-2 shadow-lg shadow-navy/10">
+          <FadeIn direction="right" delay={0.8} className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4">
+            <Link to="/appointment" className="btn-primary px-6 py-3 md:px-8 md:py-4 text-base md:text-lg flex items-center justify-center gap-2 shadow-lg shadow-navy/10 w-full sm:w-auto">
               Schedule Consult
               <ArrowRight size={20} />
-            </Button>
-            <Button variant="outline" size="lg">
+            </Link>
+            <Button variant="outline" size="lg" className="w-full sm:w-auto">
               Explore Services
             </Button>
           </FadeIn>
@@ -54,7 +54,7 @@ export const HeroSection = () => {
         </div>
 
         <FadeIn direction="left" delay={0.5} className="relative">
-          <div className="relative z-10 rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl shadow-navy/20 border-8 border-white">
+          <div className="relative z-10 rounded-3xl md:rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl shadow-navy/20 border-4 md:border-8 border-white">
             <img 
               src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2070&auto=format&fit=crop" 
               alt="Elite Dental Clinic" 

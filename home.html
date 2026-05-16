@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <title>NMDC Dental Clinic | Premium Dental Care in Rawalpindi</title>
+    <meta name="description" content="Best dental clinic in Rawalpindi, Pakistan. NMDC Dental provides expert maxillofacial surgery, cosmetic dentistry, and dental implants. Book your visit now!" />
+    <meta name="keywords" content="dentist Rawalpindi, dental clinic Pakistan, NMDC Dental, oral surgery Rawalpindi" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-dark {
+            background: rgba(0, 15, 34, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-deep-black {
+            color: #000000;
+        }
+
+        .bg-deep-black {
+            background-color: #000000;
+        }
+
+        .text-clinical-navy {
+            color: #001C37;
+        }
+
+        .bg-clinical-navy {
+            background-color: #001C37;
+        }
+
+        .text-bold-red {
+            color: #D32F2F;
+        }
+
+        .bg-bold-red {
+            background-color: #D32F2F;
+        }
+
+        .border-bold-red {
+            border-color: #D32F2F;
+        }
+
+        .timeline-line {
+            background: linear-gradient(to right, #D32F2F 50%, #e2e8f0 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.5s ease;
+        }
+
+        .step-active .timeline-line {
+            background-position: left bottom;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "on-primary": "#ffffff",
+                        "secondary": "#001C37",
+                        "accent": "#D32F2F",
+                        "background": "#ffffff",
+                        "surface": "#ffffff",
+                        "on-surface": "#000000",
+                        "on-surface-variant": "#43474d",
+                        "outline-variant": "#e2e8f0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-tablet": "32px",
+                        "container-max": "1280px",
+                        "stack-md": "48px",
+                        "gutter": "32px",
+                        "margin-mobile": "20px",
+                        "stack-xl": "120px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-lg-mobile": ["Manrope"],
+                        "headline-xl-mobile": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-white text-deep-black font-body-md">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-outline-variant shadow-sm">
+        <div
+            class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <div class="text-headline-md font-headline-md font-bold text-deep-black">
+                NMDC Dental
+            </div>
+            <nav class="hidden md:flex gap-8 items-center">
+                <a class="text-deep-black font-semibold border-b-2 border-bold-red pb-1 font-body-md text-body-md"
+                    href="#">Home</a>
+                <a class="text-on-surface-variant hover:text-deep-black transition-colors font-body-md text-body-md"
+                    href="#">Services</a>
+                <a class="text-on-surface-variant hover:text-deep-black transition-colors font-body-md text-body-md"
+                    href="#">Technology</a>
+                <a class="text-on-surface-variant hover:text-deep-black transition-colors font-body-md text-body-md"
+                    href="#">Reviews</a>
+                <a class="text-on-surface-variant hover:text-deep-black transition-colors font-body-md text-body-md"
+                    href="#">Contact</a>
+            </nav>
+            <button
+                class="bg-bold-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors duration-200 font-body-md text-body-md font-semibold">
+                Book Appointment
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[850px] flex items-center overflow-hidden bg-white pt-20 pb-stack-xl px-margin-mobile md:px-margin-desktop border-b border-outline-variant">
+            <div
+                class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center relative z-10">
+                <div class="space-y-gutter">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 border border-slate-200 rounded-full text-clinical-navy font-label-sm uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-[18px]">verified</span>
+                        Elite Maxillofacial Expertise
+                    </div>
+                    <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-deep-black leading-none">
+                        Healthy Smiles <br /><span class="text-bold-red">Begin Here.</span>
+                    </h1>
+                    <p class="text-body-lg text-on-surface-variant max-w-lg">
+                        Experience advanced dentistry curated by Brig. Dr. Nazir. From premium maxillofacial surgery to
+                        aesthetic refinements, we blend clinical precision with hospitality-driven luxury.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button
+                            class="bg-deep-black text-white px-8 py-4 rounded-lg font-headline-md flex items-center gap-2 hover:bg-slate-800 transition-all shadow-lg">
+                            Schedule Consult
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                        <button
+                            class="border-2 border-deep-black text-deep-black px-8 py-4 rounded-lg font-headline-md hover:bg-slate-50 transition-colors">
+                            Explore Services
+                        </button>
+                    </div>
+                    <!-- Credibility Badges -->
+                    <div class="pt-8 flex flex-wrap items-center gap-8 border-t border-slate-100">
+                        <div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+                            <span class="material-symbols-outlined text-bold-red">military_tech</span>
+                            <span class="font-bold">CERTIFIED EXCELLENCE</span>
+                        </div>
+                        <div class="flex gap-6 grayscale opacity-40 hover:opacity-100 transition-opacity">
+                            <div class="flex items-center gap-1 font-bold text-sm tracking-tighter">
+                                <span class="material-symbols-outlined text-lg">medical_services</span> DENTAL
+                                ASSOCIATION
+                            </div>
+                            <div class="flex items-center gap-1 font-bold text-sm tracking-tighter">
+                                <span class="material-symbols-outlined text-lg">health_and_safety</span> GLOBAL HEALTH
+                                CARE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4">
+                        <div class="flex -space-x-4">
+                            <img alt="Patient" class="w-12 h-12 rounded-full border-2 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSnUqThHQ6QLWbfW2s8fgmCE84oJktNY9qaHf4guN6h2RxmnYylTHYOXPJ5v5LSMlWaBXs4_SItNPJiSBK8c5REcEnetwKPRBCqvxLPrH5khGa-xR-Dd3YZuvHvcH3vVsYAlQCclWb2W-ERlvbi6ipP0h12Veu0-JL2ydo02E7aX1959TKOd4BuGsU_8XoNkImUEonkFRGfili-VvMWrHV556oDJZdWeBpcZ7oKkVv19A5pJILsLWDGwjJW7dzYI2ENDVDqj4I" />
+                            <img alt="Patient" class="w-12 h-12 rounded-full border-2 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuANosxsdvRmKJoaKUoEN_VJbME4uU0z860-TUbXtoZTZMz9cW-WnurA_f77ptjgKJ_iMgzpAvrKlnIs_QX4wcJUHuV7EOfn1HhW3YBQEnkvIyZyRNKjQ0JuPjNzIkWvDiAHojpGQOtjsizyfwnRlPk2Aetp73MEe47iKo6lk_rz7ibQYPt3zXoUUsfGczSweGFnscHGzp5RfzhDc7pIdLYnCbNJv8OcaMWqH3CmHj4gU4-I-zItJ_BcXh11Gmim7lSJBkWNX6hc" />
+                            <img alt="Patient" class="w-12 h-12 rounded-full border-2 border-white"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJIXrprPjf-j3Lr0WSuzvWj4SLsh789od9sBKuR044NEcwumtnlzp3JkP1tw_OkuATEM_-OoZ4ARd6HMEVUkLUDlfvIrCLvFLjkwVWLkeOlwDKZP_-c0T2LOakUhdiOYwowTLLQf4NYTkVSynuosR7VC4spI6HvD-JAe8J9g7lL7rfr6RaWOyGaoyVUwo_oMM1RRK7y0kgsHcUgDAX0OQ6pN3in-oTl8V-BsPyNDYj9ZXXe5TMEnSla-6wPKbVd2WjvMBVGmay" />
+                        </div>
+                        <div class="text-on-surface-variant">
+                            <span class="font-bold text-deep-black">2,500+</span> Happy Patients
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="relative z-10 rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl border border-outline-variant">
+                        <img alt="Brig. Dr. Nazir professional portrait" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6UC69Plu1zWPjYcrvMKnKqpe96sQVb0p7mGUgwioouy94cutgXhwy1NWG7W5mnk6GCjWtSeHe8W7Ic8eIGiw6Et9heCxuNu0_c3VswpYWCDTdehhTZqUKPSSejvg7lhAfQRY8BcYOm9FsLEPQ3oAxFxQcHOi3sHpPDUSRzf6BI8-OxqCidraBmMkV6QRXgGV6xxdqgj41r3vLG0Gkr_el6lCfmCfamdhBZUzC3FLB5D3dHS-EA7dqxzCIeEIxZmIoSIYjK2e6" />
+                    </div>
+                    <div
+                        class="absolute -top-10 -right-10 glass-panel p-6 rounded-2xl shadow-xl z-20 max-w-[200px] border-l-4 border-l-bold-red">
+                        <div class="text-bold-red font-bold text-headline-lg">98%</div>
+                        <div class="text-on-surface-variant text-label-sm">Patient Satisfaction Rate</div>
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-10 bg-clinical-navy text-white p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4">
+                        <div class="bg-bold-red p-3 rounded-full">
+                            <span class="material-symbols-outlined text-white">medical_services</span>
+                        </div>
+                        <div>
+                            <div class="font-bold">24/7 Care</div>
+                            <div class="opacity-70 text-label-sm">Emergency Support</div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-slate-50 blur-[100px] -z-10 rounded-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specialists Section -->
+        <section class="py-stack-xl bg-slate-50">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-stack-lg">
+                    <h2 class="text-headline-xl font-headline-xl text-deep-black mb-4">Meet Our Specialists</h2>
+                    <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Led by military-grade expertise,
+                        our clinical team combines decades of specialized experience with compassionate care.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Specialist 1 -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden border border-outline-variant hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/5] overflow-hidden">
+                            <img alt="Brig. Dr. Nazir"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6UC69Plu1zWPjYcrvMKnKqpe96sQVb0p7mGUgwioouy94cutgXhwy1NWG7W5mnk6GCjWtSeHe8W7Ic8eIGiw6Et9heCxuNu0_c3VswpYWCDTdehhTZqUKPSSejvg7lhAfQRY8BcYOm9FsLEPQ3oAxFxQcHOi3sHpPDUSRzf6BI8-OxqCidraBmMkV6QRXgGV6xxdqgj41r3vLG0Gkr_el6lCfmCfamdhBZUzC3FLB5D3dHS-EA7dqxzCIeEIxZmIoSIYjK2e6" />
+                        </div>
+                        <div class="p-8">
+                            <div class="text-bold-red font-label-sm uppercase mb-2">Chief Surgeon</div>
+                            <h3 class="text-headline-md text-deep-black mb-2">Brig. Dr. Nazir</h3>
+                            <p class="text-on-surface-variant text-body-md mb-4">MDS Maxillofacial Surgery, 25+ Years
+                                Clinical Experience in Military Healthcare.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Maxillofacial</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Implants</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Specialist 2 -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden border border-outline-variant hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/5] overflow-hidden">
+                            <img alt="Specialist Doctor"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFsrxxjEXY3nGMTixgmjfomLSJ6iLxZQOgApa2-CMLI78G4Sb75rOk4efnehrbLrR_XL2OUsppc2q6UaMjUPlGUW9Z9CHGuXGTuXcvuTH2m0iD2Opj6CsgBnS13C6UNls7ThupbESGulzKPR9MzEQx6_WX4An6NH6eIMWPZiJx8wNMIzoQuVWfz4_SVUewInxRRcCRJdClWpJsGpJVtDIiJMGWjUnMMQzyJ0um9gjjfcZ-jfptMhhzlmgMyWp5GFXAyJ4SYO7g" />
+                        </div>
+                        <div class="p-8">
+                            <div class="text-bold-red font-label-sm uppercase mb-2">Cosmetic Lead</div>
+                            <h3 class="text-headline-md text-deep-black mb-2">Dr. Sarah Ahmed</h3>
+                            <p class="text-on-surface-variant text-body-md mb-4">Specialist in Aesthetic Dentistry &amp;
+                                Smile Design with international accreditation.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Veneers</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Aesthetics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Specialist 3 -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden border border-outline-variant hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/5] overflow-hidden">
+                            <img alt="Orthodontist"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSnUqThHQ6QLWbfW2s8fgmCE84oJktNY9qaHf4guN6h2RxmnYylTHYOXPJ5v5LSMlWaBXs4_SItNPJiSBK8c5REcEnetwKPRBCqvxLPrH5khGa-xR-Dd3YZuvHvcH3vVsYAlQCclWb2W-ERlvbi6ipP0h12Veu0-JL2ydo02E7aX1959TKOd4BuGsU_8XoNkImUEonkFRGfili-VvMWrHV556oDJZdWeBpcZ7oKkVv19A5pJILsLWDGwjJW7dzYI2ENDVDqj4I" />
+                        </div>
+                        <div class="p-8">
+                            <div class="text-bold-red font-label-sm uppercase mb-2">Orthodontist</div>
+                            <h3 class="text-headline-md text-deep-black mb-2">Dr. Michael Chen</h3>
+                            <p class="text-on-surface-variant text-body-md mb-4">Precision Laser Orthodontics specialist
+                                focusing on functional alignment.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Laser
+                                    Braces</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-clinical-navy">Invisalign</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technology Spotlight Section -->
+        <section class="py-stack-xl bg-white">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+                    <div>
+                        <h2 class="text-headline-xl font-headline-xl text-deep-black mb-6">Clinical Technology Spotlight
+                        </h2>
+                        <p class="text-body-lg text-on-surface-variant mb-8">We invest in the world's most advanced
+                            dental technologies to ensure absolute precision and minimally invasive procedures.</p>
+                        <div class="space-y-6">
+                            <div
+                                class="flex gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 hover:border-bold-red transition-colors">
+                                <div class="bg-clinical-navy p-3 rounded-lg h-fit text-white">
+                                    <span class="material-symbols-outlined">biotech</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-headline-md mb-2">3D Cone Beam Imaging</h4>
+                                    <p class="text-on-surface-variant">High-resolution 3D diagnostics for unparalleled
+                                        anatomical accuracy in surgical planning.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 hover:border-bold-red transition-colors">
+                                <div class="bg-clinical-navy p-3 rounded-lg h-fit text-white">
+                                    <span class="material-symbols-outlined">auto_fix_high</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-headline-md mb-2">Laser Dentistry</h4>
+                                    <p class="text-on-surface-variant">Pain-free soft tissue treatments and whitening
+                                        using state-of-the-art laser protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden aspect-video shadow-2xl">
+                        <img alt="Advanced dental equipment" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp3GnOPYEVihOJVMvqKvUtDX8Is7Hqvh5WENoAr5l6BpxfFI79cr7nJBSjKLJWxcWBGaMSjEhlBK_RPmvl-F98AwLi2IH9JvGip5C-nSLaEQKS4JDE5b12UaZSOw8fafZNdz51TLvWKpYdYOYXjori97_N2Zk9MkhZTHHuV49V0KZlaouXppsn44_0aSk1nyLPPMisJlC-u0w7NfyRYVm2dogIRCWTSU5fjSQY9zY69iyaOy3pjj-sIgq0UcqAtyESE76jU4Gf" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-clinical-navy/60 to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <div class="text-label-sm font-bold uppercase tracking-widest mb-1">Precision Environment
+                            </div>
+                            <div class="text-headline-md">World-Class Facility</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Patient Journey Section -->
+        <section class="py-stack-xl bg-clinical-navy text-white overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-stack-lg">
+                    <h2 class="text-headline-xl font-headline-xl mb-4">The Patient Journey</h2>
+                    <p class="text-white/70 text-body-lg max-w-2xl mx-auto">From the moment you walk through our doors,
+                        your care is orchestrated with military precision and luxury hospitality.</p>
+                </div>
+                <div class="relative">
+                    <!-- Progress Line -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-white/20 z-0"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
+                        <!-- Step 1 -->
+                        <div class="group">
+                            <div
+                                class="w-24 h-24 rounded-full bg-white text-clinical-navy flex items-center justify-center mb-6 mx-auto md:mx-0 group-hover:bg-bold-red group-hover:text-white transition-all duration-300 shadow-xl border-4 border-clinical-navy">
+                                <span class="material-symbols-outlined text-4xl">calendar_month</span>
+                            </div>
+                            <h3 class="text-headline-md font-bold mb-3 text-center md:text-left">01. Consultation</h3>
+                            <p class="text-white/70 text-center md:text-left">In-depth digital diagnostics and personal
+                                consultation with our specialists.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="group">
+                            <div
+                                class="w-24 h-24 rounded-full bg-white text-clinical-navy flex items-center justify-center mb-6 mx-auto md:mx-0 group-hover:bg-bold-red group-hover:text-white transition-all duration-300 shadow-xl border-4 border-clinical-navy">
+                                <span class="material-symbols-outlined text-4xl">assignment</span>
+                            </div>
+                            <h3 class="text-headline-md font-bold mb-3 text-center md:text-left">02. Strategy</h3>
+                            <p class="text-white/70 text-center md:text-left">Custom treatment roadmap designed for your
+                                long-term dental health goals.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="group">
+                            <div
+                                class="w-24 h-24 rounded-full bg-white text-clinical-navy flex items-center justify-center mb-6 mx-auto md:mx-0 group-hover:bg-bold-red group-hover:text-white transition-all duration-300 shadow-xl border-4 border-clinical-navy">
+                                <span class="material-symbols-outlined text-4xl">healing</span>
+                            </div>
+                            <h3 class="text-headline-md font-bold mb-3 text-center md:text-left">03. Treatment</h3>
+                            <p class="text-white/70 text-center md:text-left">State-of-the-art procedure in a private,
+                                high-comfort clinical suite.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="group">
+                            <div
+                                class="w-24 h-24 rounded-full bg-white text-clinical-navy flex items-center justify-center mb-6 mx-auto md:mx-0 group-hover:bg-bold-red group-hover:text-white transition-all duration-300 shadow-xl border-4 border-clinical-navy">
+                                <span class="material-symbols-outlined text-4xl">verified_user</span>
+                            </div>
+                            <h3 class="text-headline-md font-bold mb-3 text-center md:text-left">04. Post-Care</h3>
+                            <p class="text-white/70 text-center md:text-left">Continual support and precision monitoring
+                                for sustained clinical results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-stack-lg text-center">
+                    <button
+                        class="bg-bold-red px-10 py-4 rounded-full font-bold hover:bg-red-700 transition-all shadow-lg">Start
+                        Your Journey Today</button>
+                </div>
+            </div>
+        </section>
+        <!-- Services Preview (Maintained) -->
+        <section class="py-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="text-center mb-stack-lg">
+                <h2 class="text-headline-xl font-headline-xl text-deep-black mb-4">Elite Clinical Excellence</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Providing a comprehensive range of
+                    dental solutions with advanced technology and artistic precision.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[700px]">
+                <div
+                    class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl bg-deep-black text-white">
+                    <img alt="Surgery room"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp3GnOPYEVihOJVMvqKvUtDX8Is7Hqvh5WENoAr5l6BpxfFI79cr7nJBSjKLJWxcWBGaMSjEhlBK_RPmvl-F98AwLi2IH9JvGip5C-nSLaEQKS4JDE5b12UaZSOw8fafZNdz51TLvWKpYdYOYXjori97_N2Zk9MkhZTHHuV49V0KZlaouXppsn44_0aSk1nyLPPMisJlC-u0w7NfyRYVm2dogIRCWTSU5fjSQY9zY69iyaOy3pjj-sIgq0UcqAtyESE76jU4Gf" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="relative h-full flex flex-col justify-end p-margin-desktop">
+                        <span
+                            class="bg-bold-red px-3 py-1 rounded-full text-[12px] font-bold w-fit mb-4">Specialty</span>
+                        <h3 class="text-headline-xl font-headline-xl mb-4">Maxillofacial Surgery</h3>
+                        <p class="text-body-md opacity-80 mb-6">Expert treatment for complex facial, jaw, and oral
+                            conditions led by military-grade surgical precision.</p>
+                        <a class="flex items-center gap-2 font-bold group text-white hover:text-bold-red transition-colors"
+                            href="#">
+                            Learn more
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="md:col-span-2 bg-white border border-outline-variant p-gutter rounded-xl flex flex-col justify-between group cursor-pointer hover:border-bold-red transition-colors">
+                    <div class="flex justify-between items-start">
+                        <div class="bg-slate-50 p-4 rounded-xl">
+                            <span class="material-symbols-outlined text-clinical-navy text-[32px]">auto_fix_high</span>
+                        </div>
+                        <span
+                            class="material-symbols-outlined opacity-20 group-hover:opacity-100 group-hover:text-bold-red transition-opacity">north_east</span>
+                    </div>
+                    <div>
+                        <h3 class="text-headline-md font-headline-md text-deep-black mb-2">Cosmetic Dentistry</h3>
+                        <p class="text-on-surface-variant">Porcelain veneers, smile makeovers, and laser whitening for a
+                            radiant confidence.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border border-outline-variant p-gutter rounded-xl flex flex-col justify-between group cursor-pointer hover:border-bold-red transition-colors">
+                    <div class="bg-slate-50 p-4 rounded-xl w-fit">
+                        <span class="material-symbols-outlined text-clinical-navy text-[32px]">biotech</span>
+                    </div>
+                    <div>
+                        <h3 class="text-headline-md font-headline-md text-deep-black mb-2">Implants</h3>
+                        <p class="text-on-surface-variant">Permanent tooth restoration.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border border-outline-variant p-gutter rounded-xl flex flex-col justify-between group cursor-pointer hover:border-bold-red transition-colors">
+                    <div class="bg-slate-50 p-4 rounded-xl w-fit">
+                        <span class="material-symbols-outlined text-clinical-navy text-[32px]">health_and_safety</span>
+                    </div>
+                    <div>
+                        <h3 class="text-headline-md font-headline-md text-deep-black mb-2">Preventive</h3>
+                        <p class="text-on-surface-variant">Routine checkups &amp; cleaning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Insurance & Financing Section -->
+        <section class="py-16 bg-slate-50 border-y border-outline-variant">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-gutter">
+                    <div class="max-w-md text-center md:text-left">
+                        <h3 class="text-headline-md font-bold mb-2">Insurance &amp; Financing</h3>
+                        <p class="text-on-surface-variant">We make elite care accessible through flexible financing and
+                            major insurance coverage.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-10 grayscale opacity-40">
+                        <div class="font-black text-2xl tracking-tighter">METLIFE</div>
+                        <div class="font-black text-2xl tracking-tighter">AETNA</div>
+                        <div class="font-black text-2xl tracking-tighter">CIGNA</div>
+                        <div class="font-black text-2xl tracking-tighter">DELTA DENTAL</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-outline-variant text-center">
+                        <div class="text-bold-red font-bold text-lg mb-1">0% Financing</div>
+                        <div class="text-label-sm text-on-surface-variant uppercase">Available for All Treatments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="flex justify-between items-end mb-stack-lg">
+                <div class="max-w-xl">
+                    <h2 class="text-headline-xl font-headline-xl text-deep-black mb-4">Patient Experiences</h2>
+                    <p class="text-body-lg text-on-surface-variant">Hear from those who have transformed their smiles
+                        and regained their confidence with us.</p>
+                </div>
+                <div class="flex gap-4">
+                    <button
+                        class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-deep-black hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <button
+                        class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-deep-black hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="bg-white border border-outline-variant p-10 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="flex gap-1 text-bold-red mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg text-deep-black font-medium mb-8">"The surgical expertise here is unmatched.
+                        Brig. Dr. Nazir performed my complex implant procedure with such care."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-100"></div>
+                        <div>
+                            <div class="font-bold text-deep-black">Sarah J.</div>
+                            <div class="text-label-sm text-on-surface-variant uppercase">Implants Patient</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-clinical-navy text-white p-10 rounded-2xl shadow-xl border border-clinical-navy">
+                    <div class="flex gap-1 text-bold-red mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg font-medium mb-8 italic">"Not just a clinic, but a place of healing. The
+                        luxury environment made me look forward to my dental visits."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-bold-red"></div>
+                        <div>
+                            <div class="font-bold">Michael R.</div>
+                            <div class="text-label-sm opacity-70 uppercase">Cosmetic Patient</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-outline-variant p-10 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="flex gap-1 text-bold-red mb-6">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg text-deep-black font-medium mb-8">"Efficient, precise, and professional. My
+                        wisdom tooth extraction was much faster and painless than I imagined."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-100"></div>
+                        <div>
+                            <div class="font-bold text-deep-black">Emma W.</div>
+                            <div class="text-label-sm text-on-surface-variant uppercase">Oral Surgery Patient</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-xl">
+            <div
+                class="relative rounded-[2.5rem] overflow-hidden bg-deep-black p-margin-desktop text-center md:text-left shadow-2xl">
+                <div
+                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5">
+                </div>
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-gutter">
+                    <div class="max-w-2xl">
+                        <h2 class="text-display-lg-mobile md:text-headline-xl font-headline-xl text-white mb-6">Ready to
+                            Experience <span class="text-bold-red">Elite Care?</span></h2>
+                        <p class="text-white/70 text-body-lg">Join our family of satisfied patients today. We offer
+                            flexible scheduling and personalized treatment plans for every patient.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-bold-red text-white px-10 py-5 rounded-full font-headline-md hover:scale-105 transition-transform flex items-center gap-2 justify-center shadow-lg">
+                            Book Your Visit
+                            <span class="material-symbols-outlined">event</span>
+                        </button>
+                        <button
+                            class="bg-white/10 text-white border border-white/20 backdrop-blur-md px-10 py-5 rounded-full font-headline-md hover:bg-white/20 transition-colors flex items-center gap-2 justify-center">
+                            Emergency? Call Now
+                            <span class="material-symbols-outlined">call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white border-t border-outline-variant">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg grid grid-cols-1 md:grid-cols-4 gap-gutter">
+            <div class="md:col-span-1">
+                <a href="https://nexagrowthsolution.com" target="_blank" rel="noopener noreferrer" class="text-headline-sm font-headline-sm font-bold text-deep-black mb-4 block hover:text-bold-red transition-colors">NMDC Dental</a>
+                <p class="text-on-surface-variant mb-6 text-body-md">Precision maxillofacial and aesthetic dental care in Rawalpindi, Pakistan. Leading experts in oral health and surgery.</p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-deep-black hover:bg-bold-red hover:text-white transition-all"
+                        href="#"><span class="material-symbols-outlined">Notebook</span></a>
+                    <a class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-deep-black hover:bg-bold-red hover:text-white transition-all"
+                        href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-deep-black mb-6">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">About Us</a>
+                    </li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Clinical
+                            Team</a></li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Patient
+                            Care</a></li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-deep-black mb-6">Services</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Maxillofacial
+                            Surgery</a></li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Cosmetic
+                            Dentistry</a></li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Laser
+                            Orthodontics</a></li>
+                    <li><a class="text-on-surface-variant hover:text-bold-red transition-colors" href="#">Dental
+                            Implants</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-deep-black mb-6">Location</h4>
+                <div class="space-y-4 text-on-surface-variant">
+                    <p class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-bold-red">location_on</span>
+                        123 Healthcare Plaza, Suite 500<br />Medical District
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-bold-red">call</span>
+                        +1 (555) DENTAL-HELP
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-bold-red">schedule</span>
+                        Mon - Sat: 9am - 7pm
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-slate-100 text-center text-on-surface-variant text-label-sm">
+            © 2026 NMDC Dental Clinic. All Rights Reserved. | 
+            A product by <a href="https://rexcore-web-main-fc0lifhzl-abdullahfayyaz21s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-bold-red">Rex Core Solution</a>
+        </div>
+    </footer>
+</body>
+
+</html>

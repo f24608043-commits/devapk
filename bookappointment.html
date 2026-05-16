@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Book Dental Appointment Rawalpindi | NMDC Dental Clinic</title>
+    <meta name="description" content="Schedule your dental visit at NMDC Dental Clinic in Rawalpindi. Easy online booking for implants, cosmetic dentistry, and emergency care." />
+    <meta name="keywords" content="book dentist Rawalpindi, dental appointment Pakistan, NMDC Dental booking" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f8f9fa",
+                        "surface-container-highest": "#e9ecef",
+                        "tertiary-fixed": "#dee2e6",
+                        "surface-container-high": "#f1f3f5",
+                        "secondary": "#0056b3", // Blue
+                        "surface-tint": "#000000",
+                        "on-error-container": "#ffffff",
+                        "error-container": "#dc3545", // Red
+                        "primary-container": "#000000", // Black
+                        "inverse-on-surface": "#ffffff",
+                        "secondary-container": "#e7f1ff",
+                        "on-primary-fixed": "#000000",
+                        "background": "#ffffff",
+                        "outline": "#ced4da",
+                        "on-secondary-fixed-variant": "#004085",
+                        "on-primary-container": "#ffffff",
+                        "tertiary": "#212529",
+                        "surface-bright": "#ffffff",
+                        "primary": "#000000", // Black
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#0056b3",
+                        "inverse-surface": "#212529",
+                        "surface-dim": "#e9ecef",
+                        "primary-fixed": "#f8f9fa",
+                        "surface-variant": "#f1f3f5",
+                        "surface-container": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#000000",
+                        "on-surface": "#000000",
+                        "secondary-fixed": "#cfe2ff",
+                        "on-surface-variant": "#495057",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#343a40",
+                        "secondary-fixed-dim": "#9ec5fe",
+                        "on-secondary-fixed": "#000000",
+                        "on-tertiary-fixed": "#000000",
+                        "on-tertiary-fixed-variant": "#495057",
+                        "outline-variant": "#dee2e6",
+                        "primary-fixed-dim": "#adb5bd",
+                        "surface": "#ffffff",
+                        "inverse-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#343a40",
+                        "tertiary-fixed-dim": "#ced4da",
+                        "on-tertiary-container": "#adb5bd",
+                        "error": "#dc3545" // Red
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-tablet": "32px",
+                        "container-max": "1280px",
+                        "stack-md": "48px",
+                        "gutter": "32px",
+                        "margin-mobile": "20px",
+                        "stack-xl": "120px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-lg-mobile": ["Manrope"],
+                        "headline-xl-mobile": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .step-active {
+            @apply bg-error text-on-error ring-4 ring-error/20;
+        }
+
+        .step-inactive {
+            @apply bg-surface-container-highest text-on-surface-variant;
+        }
+
+        .input-field {
+            @apply w-full h-14 px-4 bg-white border border-outline rounded-lg focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface placeholder:text-outline/60;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav class="bg-white sticky top-0 w-full z-50 shadow-sm border-b border-outline-variant/50">
+        <div
+            class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <div class="text-headline-md font-headline-md font-bold text-primary">
+                NMDC Dental
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md"
+                    href="#">Home</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md"
+                    href="#">Services</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md"
+                    href="#">Education</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md"
+                    href="#">Reviews</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md"
+                    href="#">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-white font-body-md text-body-md px-6 py-3 rounded-xl hover:bg-tertiary transition-all duration-200 active:scale-95">
+                Book Appointment
+            </button>
+        </div>
+    </nav>
+    <main class="relative">
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-stack-md pb-stack-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <!-- Left Sidebar: Progress & Context -->
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="space-y-4">
+                        <span
+                            class="inline-block px-4 py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm uppercase tracking-wider">Priority
+                            Appointment</span>
+                        <h1 class="font-headline-xl text-headline-xl text-primary leading-tight">Schedule Your Dental
+                            Care</h1>
+                        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-md">
+                            Experience gentle, expert maxillofacial and dental care delivered with clinical precision
+                            and personalized comfort.
+                        </p>
+                    </div>
+                    <!-- Progress Indicator -->
+                    <div class="space-y-6 pt-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold step-active">1
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-[18px] text-primary">Patient Details</h3>
+                                <p class="text-body-md text-on-surface-variant">Identification &amp; contact info</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full flex items-center justify-center font-bold step-inactive">
+                                2</div>
+                            <div>
+                                <h3 class="font-headline-md text-[18px] text-on-surface-variant">Service &amp; Time</h3>
+                                <p class="text-body-md text-outline">Select your specialized care</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full flex items-center justify-center font-bold step-inactive">
+                                3</div>
+                            <div>
+                                <h3 class="font-headline-md text-[18px] text-on-surface-variant">Review &amp; Confirm
+                                </h3>
+                                <p class="text-body-md text-outline">Final summary of details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trust Badge Card -->
+                    <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant shadow-sm">
+                        <div class="flex gap-4 items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <img class="w-8 h-8 rounded-full border-2 border-white object-cover"
+                                    data-alt="A professional close-up of a female dentist"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_V8WmzUK_W-8zYeuoJhvLtKGPVme0_evMYPvlvJCokxMJxieCrgcnxvu6AHx8bzVK7YW7MqL8FbTqX4PCTV1Re1GWk4TpAhujgSIfpBpEivo1KkC6PoFTR9IGchJUS8dMBcqKTPMx4sr_0zKszV9V_cm7DEwwjxPg6QuDUbDl_msnVRKsQ-Ba_V-MH8GljcYCbPLPaMW-wMYPOJBPAelFf7kwcL4qKVcsph8hyFOVq7HWbMDehH2qfN7MW4Gv8zeFdxbCjO9V" />
+                                <img class="w-8 h-8 rounded-full border-2 border-white object-cover"
+                                    data-alt="A male healthcare professional"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKg-InhqRM8EbSQyzPjfQYrWX7v0G8ujGmKPwBGJjNq_1-sT2aOUxuYLlAGsG8ZcfvKTJbZmX-Hyh9ZEmxWcNwAReKH8WdDzf3kexYia7wr1geYp31-mA63NdJcqqtK8DVAK9ucCUpkpUT4mOE0dNBq1aS7oFfNg7-6aLTFnIWRK5TVgKqIPKD34WSVWhwNKi3xSUEL36KXtS0H6vYuir8wJAaDMAtwxANDXGcavTmicdKyfivWz1SYACftdcvFLHGSmfu9NOi" />
+                            </div>
+                            <span class="text-body-md font-semibold text-primary">Join 5,000+ Happy Patients</span>
+                        </div>
+                        <p class="text-body-md text-on-surface-variant">"Dr. Nazir's attention to detail changed my
+                            perspective on dental visits. Truly world-class."</p>
+                    </div>
+                </div>
+                <!-- Main Booking Form Content -->
+                <div class="lg:col-span-8">
+                    <div class="bg-white p-8 md:p-12 rounded-xl border border-outline-variant shadow-lg">
+                        <form class="space-y-10">
+                            <!-- Section: Patient Details -->
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-3 pb-2 border-b border-outline-variant">
+                                    <span class="material-symbols-outlined text-secondary">person</span>
+                                    <h2 class="font-headline-md text-headline-md text-primary">Patient Identification
+                                    </h2>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Full
+                                            Name</label>
+                                        <input class="input-field" placeholder="e.g. Johnathan Doe" type="text" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Phone
+                                            Number</label>
+                                        <input class="input-field" placeholder="+1 (555) 000-0000" type="tel" />
+                                    </div>
+                                    <div class="space-y-2 md:col-span-2">
+                                        <label
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Email
+                                            Address</label>
+                                        <input class="input-field" placeholder="john.doe@example.com" type="email" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section: Appointment Info -->
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-3 pb-2 border-b border-outline-variant">
+                                    <span class="material-symbols-outlined text-secondary">calendar_month</span>
+                                    <h2 class="font-headline-md text-headline-md text-primary">Service Selection</h2>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    <!-- Service Radio Options -->
+                                    <label class="relative cursor-pointer group">
+                                        <input checked="" class="peer sr-only" name="service" type="radio" />
+                                        <div
+                                            class="p-4 rounded-xl border border-outline-variant bg-white group-hover:border-secondary peer-checked:border-secondary peer-checked:bg-secondary-container transition-all">
+                                            <span
+                                                class="material-symbols-outlined text-secondary block mb-2">medical_services</span>
+                                            <p class="font-semibold text-primary">Checkup</p>
+                                            <p class="text-body-md text-on-surface-variant text-sm">Routine cleaning</p>
+                                        </div>
+                                    </label>
+                                    <label class="relative cursor-pointer group">
+                                        <input class="peer sr-only" name="service" type="radio" />
+                                        <div
+                                            class="p-4 rounded-xl border border-outline-variant bg-white group-hover:border-secondary peer-checked:border-secondary peer-checked:bg-secondary-container transition-all">
+                                            <span
+                                                class="material-symbols-outlined text-secondary block mb-2">face</span>
+                                            <p class="font-semibold text-primary">Maxillofacial</p>
+                                            <p class="text-body-md text-on-surface-variant text-sm">Specialized surgery
+                                            </p>
+                                        </div>
+                                    </label>
+                                    <label class="relative cursor-pointer group">
+                                        <input class="peer sr-only" name="service" type="radio" />
+                                        <div
+                                            class="p-4 rounded-xl border border-outline-variant bg-white group-hover:border-secondary peer-checked:border-secondary peer-checked:bg-secondary-container transition-all">
+                                            <span
+                                                class="material-symbols-outlined text-secondary block mb-2">straighten</span>
+                                            <p class="font-semibold text-primary">Orthodontics</p>
+                                            <p class="text-body-md text-on-surface-variant text-sm">Braces &amp;
+                                                Aligners</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Preferred
+                                            Date</label>
+                                        <input class="input-field" type="date" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label
+                                            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Preferred
+                                            Time</label>
+                                        <select class="input-field appearance-none">
+                                            <option>Morning (09:00 AM - 12:00 PM)</option>
+                                            <option>Afternoon (12:00 PM - 04:00 PM)</option>
+                                            <option>Evening (04:00 PM - 07:00 PM)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section: Additional Notes -->
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-3 pb-2 border-b border-outline-variant">
+                                    <span class="material-symbols-outlined text-secondary">edit_note</span>
+                                    <h2 class="font-headline-md text-headline-md text-primary">Additional Details</h2>
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Tell
+                                        us about your concerns</label>
+                                    <textarea
+                                        class="w-full p-4 bg-white border border-outline rounded-lg focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface placeholder:text-outline/60 resize-none"
+                                        placeholder="Mention any specific pain, dental history, or fears we should be aware of..."
+                                        rows="4"></textarea>
+                                </div>
+                            </div>
+                            <!-- Form Actions -->
+                            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                                <p class="text-body-md text-on-surface-variant flex items-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+                                    Your medical data is encrypted &amp; secure.
+                                </p>
+                                <button
+                                    class="w-full md:w-auto bg-error text-on-error font-body-lg text-body-lg px-10 py-5 rounded-xl hover:bg-[#c82333] transition-all duration-200 active:scale-95 shadow-lg flex items-center justify-center gap-3"
+                                    type="submit">
+                                    Confirm Appointment
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t border-white/10">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg grid grid-cols-1 md:grid-cols-4 gap-gutter">
+            <div class="md:col-span-1">
+                <a href="https://nexagrowthsolution.com" target="_blank" rel="noopener noreferrer" class="text-2xl font-bold text-white mb-6 block hover:text-error transition-colors">NMDC Dental</a>
+                <p class="text-gray-400 font-body-md text-sm leading-relaxed">
+                    Excellence in maxillofacial and aesthetic dental surgery in Rawalpindi, Pakistan. Your journey to a better smile begins here.
+                </p>
+                <div class="flex gap-4 mt-6">
+                    <span
+                        class="material-symbols-outlined text-secondary cursor-pointer hover:text-white transition-colors">description</span>
+                    <span
+                        class="material-symbols-outlined text-secondary cursor-pointer hover:text-white transition-colors">public</span>
+                    <span
+                        class="material-symbols-outlined text-secondary cursor-pointer hover:text-white transition-colors">share</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Practice</h4>
+                <a class="text-gray-400 hover:text-secondary transition-colors font-body-md" href="#">About Us</a>
+                <a class="text-gray-400 hover:text-secondary transition-colors font-body-md" href="#">Clinical Team</a>
+                <a class="text-gray-400 hover:text-secondary transition-colors font-body-md" href="#">Patient Care</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Legal</h4>
+                <a class="text-gray-400 hover:text-secondary transition-colors font-body-md" href="#">Privacy Policy</a>
+                <a class="text-gray-400 hover:text-secondary transition-colors font-body-md" href="#">Terms of
+                    Service</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Contact</h4>
+                <p class="text-gray-400 font-body-md">123 Clinical Plaza, Healthcare District</p>
+                <p class="text-error font-bold font-body-md">Emergency: +1 (555) DENTAL-HELP</p>
+            </div>
+            <div
+                class="md:col-span-4 pt-12 mt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 font-body-md text-sm">© 2026 NMDC Dental Clinic. All Rights Reserved. | 
+                    A product by <a href="https://rexcore-web-main-fc0lifhzl-abdullahfayyaz21s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Rex Core Solution</a>
+                </p>
+                <div class="flex gap-2 opacity-50">
+                    <div class="w-10 h-6 bg-white/20 rounded-sm"></div>
+                    <div class="w-10 h-6 bg-white/20 rounded-sm"></div>
+                    <div class="w-10 h-6 bg-white/20 rounded-sm"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

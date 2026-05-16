@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '@/components/ui/Container';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { StaggerContainer } from '@/components/animations/StaggerContainer';
-import { ArrowUpRight, Microscope, Sparkles, HeartPulse } from 'lucide-react';
+import { ArrowUpRight, Microscope, Sparkles, HeartPulse, Smile } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const ServicesPreview = () => {
@@ -15,6 +15,53 @@ export const ServicesPreview = () => {
             <p className="text-muted text-lg max-w-2xl mx-auto">
               Providing a comprehensive range of dental solutions with advanced technology and artistic precision.
             </p>
+          </FadeIn>
+        </div>
+
+        {/* Core Divisions Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
+          <FadeIn className="h-full">
+            <Link 
+              to="/services?category=General Dentistry" 
+              className="group relative overflow-hidden rounded-3xl bg-surface border border-border p-6 md:p-8 hover:border-brandRed/30 transition-all duration-300 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(11,31,58,0.1)] flex flex-col justify-between h-full min-h-[220px]"
+            >
+              <div className="flex justify-between items-start mb-6">
+                <div className="bg-brandRed/10 p-3 md:p-4 rounded-2xl text-brandRed">
+                  <Smile size={32} />
+                </div>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#0B1F3A] bg-white border border-border px-3 py-1.5 rounded-full">Division</span>
+              </div>
+              <div className="flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold text-navy mb-2 group-hover:text-brandRed transition-colors">Elite Dental Care</h3>
+                <p className="text-muted text-xs md:text-sm leading-relaxed">State-of-the-art preventive, cosmetic, and restorative treatments designed to perfect your smile.</p>
+              </div>
+              <div className="flex items-center gap-2 mt-6 font-bold text-navy text-xs md:text-sm group-hover:text-brandRed transition-colors">
+                Explore Dental Services
+                <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+            </Link>
+          </FadeIn>
+
+          <FadeIn className="h-full">
+            <Link 
+              to="/services?category=Maxillofacial Surgery" 
+              className="group relative overflow-hidden rounded-3xl bg-surface border border-border p-6 md:p-8 hover:border-brandRed/30 transition-all duration-300 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(11,31,58,0.1)] flex flex-col justify-between h-full min-h-[220px]"
+            >
+              <div className="flex justify-between items-start mb-6">
+                <div className="bg-brandRed/10 p-3 md:p-4 rounded-2xl text-brandRed">
+                  <Microscope size={32} />
+                </div>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#0B1F3A] bg-white border border-border px-3 py-1.5 rounded-full">Division</span>
+              </div>
+              <div className="flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold text-navy mb-2 group-hover:text-brandRed transition-colors">Maxillofacial Surgery</h3>
+                <p className="text-muted text-xs md:text-sm leading-relaxed">Military-grade surgical expertise for complex jaw issues, facial reconstructions, and oral surgery.</p>
+              </div>
+              <div className="flex items-center gap-2 mt-6 font-bold text-navy text-xs md:text-sm group-hover:text-brandRed transition-colors">
+                Explore Maxillofacial Surgery
+                <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+            </Link>
           </FadeIn>
         </div>
 

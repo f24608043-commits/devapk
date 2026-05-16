@@ -63,7 +63,7 @@ const Reviews = () => {
             </div>
           </div>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
             {reviews.map((review) => (
               <ReviewCard key={review.id} review={review} />
             ))}
@@ -73,9 +73,9 @@ const Reviews = () => {
 
       {/* Form Section */}
       <section className="bg-surface section-padding">
-        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <FadeIn direction="right">
-            <form className="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl space-y-8 border border-border">
+            <form className="bg-white p-6 md:p-10 lg:p-16 rounded-3xl md:rounded-[3rem] shadow-2xl space-y-6 md:space-y-8 border border-border">
               <div>
                 <h3 className="text-3xl text-navy mb-2">Share Your Experience</h3>
                 <p className="text-muted">Your feedback helps us maintain our standard of excellence.</p>
@@ -108,7 +108,7 @@ const Reviews = () => {
                 <textarea className="w-full bg-surface border-none rounded-xl py-4 px-6 outline-none focus:ring-2 focus:ring-brandRed/20 min-h-[150px]" placeholder="How was your visit?"></textarea>
               </div>
 
-              <div className="border-2 border-dashed border-border rounded-3xl p-10 flex flex-col items-center justify-center bg-surface hover:bg-white transition-all cursor-pointer group">
+              <div className="border-2 border-dashed border-border rounded-2xl md:rounded-3xl p-6 md:p-10 flex flex-col items-center justify-center bg-surface hover:bg-white transition-all cursor-pointer group text-center">
                 <CloudUpload size={40} className="text-muted group-hover:text-brandRed mb-2 transition-colors" />
                 <span className="text-muted font-bold">Drop image or click to upload</span>
               </div>
@@ -133,7 +133,7 @@ const Reviews = () => {
               </div>
             </FadeIn>
 
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-4 md:gap-8">
               <StatItem label="Satisfaction" value="98%" />
               <StatItem label="Happy Smiles" value="50k+" />
               <StatItem label="Experience" value="25yr" />
@@ -146,27 +146,27 @@ const Reviews = () => {
 };
 
 const ReviewCard = ({ review }: { review: Review }) => (
-  <div className="glass-panel p-12 rounded-[3rem] border border-border card-hover relative group">
-    <div className="flex gap-6 mb-10">
-      <div className="w-20 h-20 rounded-full border-4 border-white shadow-xl overflow-hidden">
+  <div className="glass-panel p-6 md:p-12 rounded-3xl md:rounded-[3rem] border border-border card-hover relative group">
+    <div className="flex gap-4 md:gap-6 mb-6 md:mb-10 items-center">
+      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-xl overflow-hidden shrink-0">
         <img src={review.image} className="w-full h-full object-cover" alt={review.name} />
       </div>
       <div>
-        <h3 className="text-2xl text-navy font-bold">{review.name}</h3>
-        <p className="text-brandRed font-bold text-sm">{review.treatment}</p>
+        <h3 className="text-xl md:text-2xl text-navy font-bold leading-tight">{review.name}</h3>
+        <p className="text-brandRed font-bold text-xs md:text-sm">{review.treatment}</p>
       </div>
     </div>
     
-    <div className="flex gap-1 text-brandRed mb-8">
-      {[...Array(review.rating)].map((_, i) => <Star key={i} size={20} fill="currentColor" />)}
+    <div className="flex gap-1 text-brandRed mb-6 md:mb-8">
+      {[...Array(review.rating)].map((_, i) => <Star key={i} size={16} className="md:w-5 md:h-5" fill="currentColor" />)}
     </div>
 
-    <p className="text-xl text-navy italic leading-relaxed mb-10">"{review.content}"</p>
+    <p className="text-base md:text-xl text-navy italic leading-relaxed mb-6 md:mb-10">"{review.content}"</p>
 
     {review.galleryImages && (
-      <div className="flex gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+      <div className="flex gap-3 md:gap-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 lg:translate-y-4 lg:group-hover:translate-y-0 overflow-x-auto pb-2 hide-scrollbar">
         {review.galleryImages.map((img, i) => (
-          <div key={i} className="w-24 h-24 rounded-2xl overflow-hidden border border-border">
+          <div key={i} className="w-16 h-16 md:w-24 md:h-24 rounded-xl md:rounded-2xl overflow-hidden border border-border shrink-0">
             <img src={img} className="w-full h-full object-cover" alt="Review Gallery" />
           </div>
         ))}
@@ -176,9 +176,9 @@ const ReviewCard = ({ review }: { review: Review }) => (
 );
 
 const StatItem = ({ label, value }: { label: string, value: string }) => (
-  <div className="text-center">
-    <div className="text-4xl font-manrope font-bold text-navy mb-1">{value}</div>
-    <div className="text-xs font-bold text-muted uppercase tracking-widest">{label}</div>
+  <div className="text-center px-2">
+    <div className="text-2xl md:text-4xl font-manrope font-bold text-navy mb-1">{value}</div>
+    <div className="text-[10px] md:text-xs font-bold text-muted uppercase tracking-widest">{label}</div>
   </div>
 );
 

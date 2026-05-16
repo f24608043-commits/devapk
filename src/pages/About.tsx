@@ -5,6 +5,7 @@ import { FadeIn } from '@/components/animations/FadeIn';
 import { StaggerContainer } from '@/components/animations/StaggerContainer';
 import { Container } from '@/components/ui/Container';
 import { MainLayout } from '@/layouts/MainLayout';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -18,11 +19,11 @@ const About = () => {
                 <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-semibold text-sm tracking-wider uppercase">
                   Our Legacy
                 </span>
-                <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                   Redefining Dental <br />
                   <span className="text-secondary">Precision & Care.</span>
                 </h1>
-                <p className="text-lg text-on-surface-variant max-w-xl">
+                <p className="text-base md:text-lg text-on-surface-variant max-w-xl">
                   NMDC Dental & Maxillofacial Clinic was founded on the principle of bringing 
                   military-grade precision and elite clinical excellence to the world of modern dentistry.
                 </p>
@@ -43,7 +44,7 @@ const About = () => {
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFsrxxjEXY3nGMTixgmjfomLSJ6iLxZQOgApa2-CMLI78G4Sb75rOk4efnehrbLrR_XL2OUsppc2q6UaMjUPlGUW9Z9CHGuXGTuXcvuTH2m0iD2Opj6CsgBnS13C6UNls7ThupbESGulzKPR9MzEQx6_WX4An6NH6eIMWPZiJx8wNMIzoQuVWfz4_SVUewInxRRcCRJdClWpJsGpJVtDIiJMGWjUnMMQzyJ0um9gjjfcZ-jfptMhhzlmgMyWp5GFXAyJ4SYO7g" 
+                    src="/about-clinic.jpg" 
                     alt="Luxury Clinic Interior" 
                     className="w-full h-full object-cover"
                   />
@@ -64,7 +65,7 @@ const About = () => {
       <section className="py-16 bg-primary text-white">
         <Container>
           <StaggerContainer>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
               {[
                 { label: 'Patient Satisfaction', value: '98%' },
                 { label: 'Successful Implants', value: '15k+' },
@@ -73,8 +74,8 @@ const About = () => {
               ].map((stat, index) => (
                 <FadeIn key={index}>
                   <div className="space-y-2">
-                    <div className="text-4xl md:text-5xl font-bold text-secondary-container">{stat.value}</div>
-                    <div className="text-on-primary/60 text-sm uppercase tracking-widest">{stat.label}</div>
+                    <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-container">{stat.value}</div>
+                    <div className="text-on-primary/60 text-[10px] md:text-sm uppercase tracking-widest">{stat.label}</div>
                   </div>
                 </FadeIn>
               ))}
@@ -91,7 +92,7 @@ const About = () => {
               <FadeIn direction="right">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[3/4]">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6UC69Plu1zWPjYcrvMKnKqpe96sQVb0p7mGUgwioouy94cutgXhwy1NWG7W5mnk6GCjWtSeHe8W7Ic8eIGiw6Et9heCxuNu0_c3VswpYWCDTdehhTZqUKPSSejvg7lhAfQRY8BcYOm9FsLEPQ3oAxFxQcHOi3sHpPDUSRzf6BI8-OxqCidraBmMkV6QRXgGV6xxdqgj41r3vLG0Gkr_el6lCfmCfamdhBZUzC3FLB5D3dHS-EA7dqxzCIeEIxZmIoSIYjK2e6" 
+                    src="/dr-nazir.jpg" 
                     alt="Brig. Dr. Nazir" 
                     className="w-full h-full object-cover"
                   />
@@ -137,9 +138,9 @@ const About = () => {
       {/* The NMDC Distinction */}
       <section className="py-24 bg-surface-container-low overflow-hidden">
         <Container>
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <FadeIn>
-              <h2 className="text-3xl md:text-5xl font-bold text-primary">The NMDC Distinction</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">The NMDC Distinction</h2>
               <p className="mt-4 text-on-surface-variant max-w-2xl mx-auto">
                 What sets us apart is our commitment to merging high-end technology with a boutique patient experience.
               </p>
@@ -187,22 +188,22 @@ const About = () => {
               <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/30 blur-3xl rounded-full -translate-x-1/2 translate-y-1/2"></div>
             </div>
             
-            <FadeIn className="relative z-10 space-y-8">
-              <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+            <FadeIn className="relative z-10 space-y-6 md:space-y-8">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Experience the Future of <br className="hidden md:block" />
                 Dental Excellence.
               </h2>
-              <p className="text-on-primary/70 text-lg max-w-2xl mx-auto">
+              <p className="text-on-primary/70 text-base md:text-lg max-w-2xl mx-auto">
                 Ready to transform your smile with the care you deserve? 
                 Join our community of satisfied patients and experience the difference.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <button className="bg-secondary text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform">
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link to="/appointment" className="w-full sm:w-auto bg-secondary text-white px-8 md:px-10 py-3 md:py-4 rounded-xl font-bold hover:scale-105 transition-transform text-center">
                   Book Your Consult
-                </button>
-                <button className="bg-white/10 text-white border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition-colors">
+                </Link>
+                <Link to="/contact" className="w-full sm:w-auto bg-white/10 text-white border border-white/20 px-8 md:px-10 py-3 md:py-4 rounded-xl font-bold hover:bg-white/20 transition-colors text-center">
                   Contact Us
-                </button>
+                </Link>
               </div>
             </FadeIn>
           </div>
